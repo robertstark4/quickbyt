@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quickbyt Agency</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: #fff;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 80px 0;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.hero p {
+  margin: 20px 0;
+  color: #cbd5e1;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  margin: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: #22c55e;
+  color: black;
+}
+
+.btn-secondary {
+  border: 1px solid #fff;
+  color: white;
+}
+
+/* SECTION */
+section {
+  padding: 60px 0;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* SERVICES */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* CAROUSEL */
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel-item {
+  min-width: 300px;
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  scroll-snap-align: start;
+}
+
+/* BRANCHES */
+.branches {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.branch {
+  flex: 1;
+  min-width: 250px;
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* TESTIMONIAL */
+.testimonial {
+  text-align: center;
+}
+
+.testimonial img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
+  color: #94a3b8;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero container">
+  <h1>Smart Growth for Modern Businesses</h1>
+  <p>We help brands scale with strategy, AI visibility, and performance marketing.</p>
+  <a href="#" class="btn btn-primary">WhatsApp</a>
+  <a href="#" class="btn btn-secondary">LinkedIn</a>
+</section>
+
+<!-- ABOUT -->
+<section class="container">
+  <h2>About Quickbyt</h2>
+  <p style="text-align:center; max-width:700px; margin:auto;">
+    Quickbyt is a modern growth agency focused on helping businesses scale through data, strategy, and AI technologies. We build systems that deliver measurable results.
+  </p>
+</section>
+
+<!-- SERVICES -->
+<section class="container">
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="card">
+      <h3>Business Analysis</h3>
+      <p>Identify growth opportunities with data-driven insights.</p>
+    </div>
+    <div class="card">
+      <h3>Retail Marketing</h3>
+      <p>Convert traffic into revenue with smart campaigns.</p>
+    </div>
+    <div class="card">
+      <h3>AEO</h3>
+      <p>Optimize your brand for AI search engines.</p>
+    </div>
+    <div class="card">
+      <h3>Marketing Models</h3>
+      <p>Build scalable marketing systems for growth.</p>
+    </div>
+  </div>
+</section>
+
+<!-- MARKETING CAROUSEL -->
+<section class="container">
+  <h2>Marketing Models</h2>
+  <div class="carousel">
+    <div class="carousel-item">Performance Funnel Model</div>
+    <div class="carousel-item">Retail Boost Model</div>
+    <div class="carousel-item">AI Visibility Model</div>
+    <div class="carousel-item">Growth Loop Model</div>
+  </div>
+</section>
+
+<!-- BRANCHES -->
+<section class="container">
+  <h2>Our Branches</h2>
+  <div class="branches">
+    <div class="branch">
+      <h3>Indore</h3>
+      <p>Growth & Strategy Hub</p>
+    </div>
+    <div class="branch">
+      <h3>Your City</h3>
+      <p>Marketing & Operations</p>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIAL -->
+<section class="container">
+  <h2>Testimonials</h2>
+  <div class="carousel">
+    
+    <div class="carousel-item testimonial">
+      <img src="https://randomuser.me/api/portraits/men/32.jpg">
+      <h4>Rahul Sharma</h4>
+      <p>RetailEdge Pvt Ltd</p>
+      <p>"3x growth in 2 months."</p>
+    </div>
+
+    <div class="carousel-item testimonial">
+      <img src="https://randomuser.me/api/portraits/women/44.jpg">
+      <h4>Priya Mehta</h4>
+      <p>UrbanCart</p>
+      <p>"AEO changed our visibility."</p>
+    </div>
+
+    <div class="carousel-item testimonial">
+      <img src="https://randomuser.me/api/portraits/men/55.jpg">
+      <h4>Aman Verma</h4>
+      <p>ShopEase</p>
+      <p>"Strong execution and results."</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="hero container">
+  <h2>Let’s Build Something Scalable</h2>
+  <a href="#" class="btn btn-primary">WhatsApp</a>
+  <a href="#" class="btn btn-secondary">LinkedIn</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>Quickbyt © 2026 | Growth powered by strategy & AI</p>
+</footer>
+
+</body>
+</html>
