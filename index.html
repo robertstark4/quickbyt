@@ -121,17 +121,32 @@ h2 {
   border-radius: 12px;
 }
 
-/* TESTIMONIAL */
-.testimonial {
+/* TESTIMONIALS */
+.testimonials {
   text-align: center;
 }
 
+.testimonial-container {
+  position: relative;
+  max-width: 500px;
+  margin: auto;
+}
+
+.testimonial {
+  display: none;
+}
+
+.testimonial.active {
+  display: block;
+}
+
 .testimonial img {
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   margin-bottom: 10px;
 }
+
 
 /* FOOTER */
 footer {
@@ -188,55 +203,48 @@ footer {
 </section>
 
 <!-- MARKETING CAROUSEL -->
-<section class="container">
-  <h2>Marketing Models</h2>
-  <div class="carousel">
-    <div class="carousel-item">Performance Funnel Model</div>
-    <div class="carousel-item">Retail Boost Model</div>
-    <div class="carousel-item">AI Visibility Model</div>
-    <div class="carousel-item">Growth Loop Model</div>
-  </div>
-</section>
+
 
 <!-- BRANCHES -->
 <section class="container">
   <h2>Our Branches</h2>
   <div class="branches">
     <div class="branch">
-      <h3>Indore</h3>
+      <h3>Mumbai</h3>
       <p>Growth & Strategy Hub</p>
     </div>
     <div class="branch">
       <h3>Your City</h3>
-      <p>Marketing & Operations</p>
+      <p>Retail Marketing & Operations</p>
     </div>
   </div>
 </section>
 
-<!-- TESTIMONIAL -->
-<section class="container">
-  <h2>Testimonials</h2>
-  <div class="carousel">
-    
-    <div class="carousel-item testimonial">
-      <img src="https://randomuser.me/api/portraits/men/32.jpg">
-      <h4>Rahul Sharma</h4>
-      <p>RetailEdge Pvt Ltd</p>
-      <p>"3x growth in 2 months."</p>
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <h2>What Our Clients Say</h2>
+
+  <div class="testimonial-container">
+
+    <div class="testimonial active">
+      <img src="https://i.pravatar.cc/100?img=1">
+      <p>"Quickbyt transformed our marketing completely."</p>
+      <strong>Rohit Sharma</strong>
+      <p>Retail Brand Owner</p>
     </div>
 
-    <div class="carousel-item testimonial">
-      <img src="https://randomuser.me/api/portraits/women/44.jpg">
-      <h4>Priya Mehta</h4>
-      <p>UrbanCart</p>
-      <p>"AEO changed our visibility."</p>
+    <div class="testimonial">
+      <img src="https://i.pravatar.cc/100?img=2">
+      <p>"Their AEO strategy gave us a real edge."</p>
+      <strong>Anjali Verma</strong>
+      <p>D2C Founder</p>
     </div>
 
-    <div class="carousel-item testimonial">
-      <img src="https://randomuser.me/api/portraits/men/55.jpg">
-      <h4>Aman Verma</h4>
-      <p>ShopEase</p>
-      <p>"Strong execution and results."</p>
+    <div class="testimonial">
+      <img src="https://prettylittleshopp.in/wp-content/uploads/2025/02/cropped-Untitled-design-2025-02-16T225846.199.png">
+      <p>"They Helped us to understand our target audience better"</p>
+      <strong>Khushi Mandlik</strong>
+      <p>Founder Pretty Little Shopp</p>
     </div>
 
   </div>
